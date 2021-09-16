@@ -1,0 +1,13 @@
+services:
+  skyless:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "7171:7171"
+      - "7172:7172"
+    volumes:
+      - type: bind
+        source: .
+        target: /skyless
+    env_file: .env
