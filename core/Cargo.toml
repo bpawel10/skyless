@@ -1,22 +1,28 @@
 [package]
 name = "skyless_core"
 version = "0.0.1"
-authors = ["bpawel10"]
-edition = "2018"
+edition = "2021"
 
 [dependencies]
-async-stream = "0.3.2"
-async-trait = "0.1.51"
-bytes = "1.1.0"
-convert_case = "0.4.0"
-futures = "0.3.17"
-itertools = "0.10.1"
-num_enum = "0.5.4"
-openssl = "0.10.36"
-proc-macro2 = "1.0.29"
-quote = "1.0.9"
 skyless_macros = { path = "../macros" }
-syn = { version = "1.0.76", features = ["parsing"] }
-tokio = { version = "1.11.0", features = ["macros", "net", "rt-multi-thread", "sync", "time"] }
-tokio-stream = "0.1.7"
-tokio-util = { version = "0.6.8", features = ["codec"] }
+
+async-stream = "0.3.5"
+async-trait = "0.1.77"
+bytes = "1.5.0"
+convert_case = "0.6.0"
+futures = "0.3.30"
+itertools = "0.12.1"
+num_enum = "0.7.2"
+openssl = "0.10.63"
+proc-macro2 = "1.0.78"
+quote = "1.0.35"
+syn = { version = "2.0.49", features = ["parsing"] }
+tokio = { version = "1.36.0", features = [
+    "macros",
+    "net",
+    "rt-multi-thread",
+    "sync",
+    "time",
+] }
+tokio-stream = "0.1.14"
+tokio-util = { version = "0.7.10", features = ["codec"] }

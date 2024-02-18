@@ -1,8 +1,2 @@
-# [package]
-# name = "skyless"
-# version = "0.0.1"
-# authors = ["bpawel10"]
-# edition = "2018"
-
 [workspace]
 members = ["core", "macros"]

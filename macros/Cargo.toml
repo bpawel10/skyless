@@ -1,14 +1,13 @@
 [package]
 name = "skyless_macros"
 version = "0.0.1"
-authors = ["bpawel10"]
-edition = "2018"
+edition = "2021"
 
 [lib]
 proc-macro = true
 
 [dependencies]
-convert_case = "0.4.0"
-proc-macro2 = "1.0.29"
-quote = "1.0.9"
-syn = { version = "1.0.76", features = ["parsing"] }
+convert_case = "0.6.0"
+proc-macro2 = "1.0.78"
+quote = "1.0.35"
+syn = { version = "2.0.49", features = ["parsing"] }
