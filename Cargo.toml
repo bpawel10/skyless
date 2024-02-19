@@ -1,2 +1,15 @@
+[package]
+name = "skyless"
+version = "0.0.1"
+edition = "2021"
+
+[dependencies]
+skyless_core = { path = "core" }
+skyless_systems_core = { path = "systems/core" }
+skyless_scripts = { path = "systems/scripts" }
+
+tokio = "1.36.0"
+tokio-stream = "0.1.14"
+
 [workspace]
-members = ["core", "macros"]
+members = ["core", "core/macro", "systems/core", "systems/scripts"]

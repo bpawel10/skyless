@@ -4,7 +4,7 @@ version = "0.0.1"
 edition = "2021"
 
 [dependencies]
-skyless_macros = { path = "../macros" }
+skyless_macro = { path = "macro" }
 
 async-stream = "0.3.5"
 async-trait = "0.1.77"

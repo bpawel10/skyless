@@ -1,0 +1,10 @@
+[package]
+name = "skyless_scripts"
+version = "0.0.1"
+edition = "2021"
+
+[dependencies]
+skyless_core = { path = "../../core" }
+skyless_systems_core = { path = "../core" }
+
+tokio = "1.36.0"
